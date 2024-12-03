@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>NewsHub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-category="general" class="active">Home</a></li>
+                    <li><a href="#world" data-category="world">World</a></li>
+                    <li><a href="#technology" data-category="technology">Technology</a></li>
+                    <li><a href="#sports" data-category="sports">Sports</a></li>
+                    <li><a href="#entertainment" data-category="entertainment">Entertainment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Top Stories</h2>
+                <div id="news-container">
+                    <!-- News articles will be inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NewsHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="error-message" style="display:none; color: red; text-align: center;">Failed to load news articles. Please try again later.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
